@@ -13,16 +13,25 @@ class Counter  extends Component {
             <h1 style= { {fontWeight: 'bold'} }>Hello React Js</h1>
             <hr />
            
-            <span>{ this.countexpresion()}</span>
+            <span className= {this.getbadgeclass()}>{ this.countexpresion()}</span>
            
-            <br />
-            <button className="btn btn-primary m-2">Add</button>
+            <br /> <br />
+            <button className="btn btn-primary ">Add</button>
             <br /><br />
             <img src={this.state.imageUrl} alt="" />
            
         </React.Fragment>
         );
     }
+    // method 2
+    getbadgeclass(){
+        let classes = 'btn btn-'
+        classes += this.state.count===0 ? 'warning':'primary';
+        return classes;
+
+    }
+
+     // method 1
     countexpresion(){
         return this.state.count === 0? <h5>Zero</h5>: this.state.count;
     }
