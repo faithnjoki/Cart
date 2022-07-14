@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class Counter  extends Component {
     state = { 
-        count: 0
+        count: 0,
+        imageUrl: 'https://cdn.pixabay.com/photo/2017/12/11/15/34/lion-3012515__340.jpg',
 
      };
     render() { 
@@ -16,6 +17,8 @@ class Counter  extends Component {
            
             <br />
             <button class="btn btn-primary">Add</button>
+            <br /><br />
+            <img src={this.state.imageUrl} alt="" />
            
         </React.Fragment>
         );
