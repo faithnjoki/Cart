@@ -16,7 +16,7 @@ class Counter  extends Component {
             <span>{ this.countexpresion()}</span>
            
             <br />
-            <button class="btn btn-primary">Add</button>
+            <button className="btn btn-primary m-2">Add</button>
             <br /><br />
             <img src={this.state.imageUrl} alt="" />
            
