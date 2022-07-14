@@ -10,7 +10,7 @@ class Counter  extends Component {
         return (
             // use react fragment to avoid  too  many divs 
         <React.Fragment>
-            <h1>Hello React Js</h1>
+            <h1 style= { {fontWeight: 'bold'} }>Hello React Js</h1>
             <hr />
            
             <span>{ this.countexpresion()}</span>
